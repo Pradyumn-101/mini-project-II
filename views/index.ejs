@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            /* position:fixed; */
+            background-color: #03192a;
+            height:80px;
+            width:100%;
+            color:white;
+            display: flex;
+            align-items: center;
+        }
+        #tracker{
+            font-size:30px;
+        }
+        #product{
+            margin-left:18px;
+        }
+        .product-name {
+            animation: jump 0.5s infinite alternate;
+            padding-top:15px;
+            padding-left:20px;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+nav{
+    margin-left: 500px;
+}
+nav ul{
+display: flex;
+justify-content: left;
+align-items: center;
+
+}
+nav a{
+    font-size: 26px;
+color: white;
+text-decoration: none;
+}
+nav li{
+border: 0px;
+margin: 20px;
+border-style: solid;
+display: inline;
+font-size:xx-large;
+text-align: center;
+}
+#user{
+    border:none;
+    outline:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+.footer{
+  background:#333;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:35px;
+}
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+
+.footer .box-container .box p{
+  font-size: 1rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--orange);
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 1 rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:var(--orange);
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/960943734a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="product-tracker">
+            <h3 class="product-name"><span id="product">Product</span> <br><span id="tracker">Tracker</span> </h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button id="user" onclick="window.location.href='/signin.ejs'" ><i class="fa-solid fa-user" style="color:white;margin-left:200px;font-size:25px;"></i></button>
+            <i class="fa-solid fa-magnifying-glass" style="color:white;margin-left:30px;font-size:25px;"></i>
+        </div>
+    </header>
+    <div>
+        <video src="/tempalate.mp4" controls loop autoplay style="width:100%"></video>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Tariffic travel is a recently lanuched site that lets you enter an amazing world of curisuty and adventures
+                    The creators of the site are the students of GLA University. The site is managed and produced by 3rd year student of GLA University.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Other Services</h3>
+                <a href="html/conveyence.html" target="_blank">Conveyence</a>
+                <a href="https://www.olacabs.com/">Hotel booking</a>
+                <a href="https://www.olacabs.com/">Cab Booking</a>
+                <a href="https://www.zomato.com/">Food delivery</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/profile.php?id=100084952776038" target="_blank">facebook</a>
+                <a href="https://www.instagram.com/" target="_blank">instagram</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+                <a href="https://github.com/" target="_blank">github</a>
+            </div>
+        </div>
+        <h1 class="credit"> created by:<br> <span> Disha Agrawal</span>(201500225)<span><br>Pradyumn Gupta</span>(201500259)</h1>
+        <h1 class="refer" style="margin-left: 600px;">References&nbsp:&nbsp<i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-google"></i></h1>
+    </section>
+
+</body>
+</html>
