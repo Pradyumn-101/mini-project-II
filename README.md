@@ -1,2 +1,2 @@
-# productTrackker
+# productTracker
 project build from scratch
